@@ -1,0 +1,535 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bZRTzLGOxfRk"
+      },
+      "source": [
+        "1. In a print statement, what happens if you leave out one of the parentheses, or both?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 109
+        },
+        "id": "9siheVeQxfRp",
+        "outputId": "c567c5de-5632-4a78-9cdc-fb7dfc932fc5"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "incomplete input (<ipython-input-1-195411bb7137>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-1-195411bb7137>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    print('Ian'\u001b[0m\n\u001b[0m               ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m incomplete input\n"
+          ]
+        }
+      ],
+      "source": [
+        "print('Ian'"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e231WpotxfRq"
+      },
+      "source": [
+        "2. If you are trying to print a string, what happens if you leave out one of the quotation marks,\n",
+        "or both?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 109
+        },
+        "id": "ElNdcxROxfRr",
+        "outputId": "38270507-0b07-43cb-9f43-b6cca8bc3350"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "unterminated string literal (detected at line 1) (<ipython-input-2-f6913778c546>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-2-f6913778c546>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    print(Ian')\u001b[0m\n\u001b[0m             ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m unterminated string literal (detected at line 1)\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(Ian')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xHWO0LNpxfRr"
+      },
+      "source": [
+        "3. You can use a minus sign to make a negative number like -2. What happens if you put a plus\n",
+        "sign before a number? What about 2++2?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sHC-0I3qxfRs",
+        "outputId": "cd27b5cd-423d-4023-e569-609691064f31"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ],
+      "source": [
+        "2++2"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6VKQNymFxfRs"
+      },
+      "source": [
+        "4. In math notation, leading zeros are ok, as in 09. What happens if you try this in Python?\n",
+        "What about 011?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 109
+        },
+        "id": "S6M347GyxfRt",
+        "outputId": "25922e01-5574-4bdc-8a54-721a632c7d5b"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers (<ipython-input-5-2e9780ecac58>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-5-2e9780ecac58>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    011\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers\n"
+          ]
+        }
+      ],
+      "source": [
+        "011"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "EVv0CFpFxfRt"
+      },
+      "source": [
+        "5. What happens if you have two values with no operator between them?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 109
+        },
+        "id": "957tG11ZxfRt",
+        "outputId": "ddc27bf3-f204-46e6-af02-85e3b5afc47b"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid syntax (<ipython-input-6-869513692cef>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-6-869513692cef>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    3 4\u001b[0m\n\u001b[0m      ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ],
+      "source": [
+        "3 4"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tswNEi0_xfRu"
+      },
+      "source": [
+        "6. How many seconds are there in 42 minutes 42 seconds?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qm6_MPqZxfRu",
+        "outputId": "62e0b81b-acc6-4871-87f5-09e8745616ef"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2562"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ],
+      "source": [
+        "minutes = 42\n",
+        "(minutes * 60) + 42"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "0fgvJ3C7xfRu"
+      },
+      "source": [
+        "7. How many miles are there in 10 kilometers? Hint: there are 1.61 kilometers in a mile."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "8S-34-kqxfRu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "5b4b3f7a-9e53-4cea-d905-53b019fe5345"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "6.211180124223602"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ],
+      "source": [
+        "km_in_mi = 1.61\n",
+        "10 / km_in_mi"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JhTFGpxmxfRv"
+      },
+      "source": [
+        "8. If you run a 10 kilometer race in 42 minutes 42 seconds, what is your average pace (time per\n",
+        "mile in minutes and seconds)? What is your average speed in miles per hour?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "6UxTY0eaxfRv",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fd1bb275-7e3b-45a3-a200-cd28bc97713b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Average Pace: 6 minutes and 52.4820000000001 seconds per mile.\n",
+            "Average Speed: 8.727653570337614 miles per hour\n"
+          ]
+        }
+      ],
+      "source": [
+        "race_in_mi = 10 / 1.61\n",
+        "\n",
+        "time_in_seconds = (42 * 60) + 42\n",
+        "time_in_minutes = time_in_seconds / 60\n",
+        "\n",
+        "pace_in_minutes = time_in_minutes / race_in_mi\n",
+        "minutes = int(pace_in_minutes)\n",
+        "seconds_decimal = pace_in_minutes - int(pace_in_minutes)\n",
+        "seconds = seconds_decimal * 60\n",
+        "\n",
+        "print(\"Average Pace: \" + str(minutes) + \" minutes and \" + str(seconds) + \" seconds per mile.\")\n",
+        "\n",
+        "mi_per_second = race_in_mi / time_in_seconds # miles per second\n",
+        "mi_per_hour = mi_per_second * 3600 # Because there's 600 seconds per hour\n",
+        "\n",
+        "print(\"Average Speed: \" + str(mi_per_hour) + \" miles per hour\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yrvdg-ghxfRv"
+      },
+      "source": [
+        "9. We’ve seen that n = 42 is legal. What about 42 = n?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "qg2HXlyTxfRw",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 109
+        },
+        "outputId": "75a8947b-b13f-4d03-8112-aa846d3abe38"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "cannot assign to literal here. Maybe you meant '==' instead of '='? (<ipython-input-10-f0c37ed646fc>, line 1)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-10-f0c37ed646fc>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    42 = n\u001b[0m\n\u001b[0m    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m cannot assign to literal here. Maybe you meant '==' instead of '='?\n"
+          ]
+        }
+      ],
+      "source": [
+        "42 = n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7RVzN3t8xfRw"
+      },
+      "source": [
+        "10. How about x = y = 1?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "96JGj3zWxfRw"
+      },
+      "outputs": [],
+      "source": [
+        "x = y = 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fkQr781zxfRw"
+      },
+      "source": [
+        "11. In math notation you can multiply x and y like this: xy. What happens if you try that in\n",
+        "Python?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "B8kOqDm7xfRx",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 145
+        },
+        "outputId": "d5dc47c3-e5c5-4a7b-eed7-ec2933a727d2"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'xy' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-12-f3603995b6f3>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mxy\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m: name 'xy' is not defined"
+          ]
+        }
+      ],
+      "source": [
+        "xy"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "dUk3m9XexfRx"
+      },
+      "source": [
+        "12. The volume of a sphere with radius r is 4/3pr<sup>3</sup>. What is the volume of a sphere with radius 5? solve by defining r as a variable and set it to 5, then calculate volume using a formula that uses r."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "Pckg_e2wxfRx",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "33b868dc-4e5b-4738-9216-f4b40706ec1e"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Volume = 523.3333333333334\n"
+          ]
+        }
+      ],
+      "source": [
+        "r = 5\n",
+        "pi = 3.14\n",
+        "volume = (4 / 3) * pi * (r ** 3)\n",
+        "print(\"Volume = \" + str(volume))"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "v9jXZN5mxfRx"
+      },
+      "source": [
+        "13. Suppose the cover price of a book is \\\\$24.95, but bookstores get a 40% discount. Shipping costs\n",
+        "$3 for the first copy and 75 cents for each additional copy. What is the total wholesale cost for\n",
+        "60 copies?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "cyBIUs0sxfRx",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "6d20d136-6dea-400b-f167-40d384527c08"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Wholesale Cost: $945.4499999999999\n"
+          ]
+        }
+      ],
+      "source": [
+        "cover_price = 24.95\n",
+        "discounted_price = 24.95 - (24.95 * 0.4) # discounted_price = 14.97\n",
+        "first_copy = 3 # Shipping cost of first copy\n",
+        "additional_copies = 0.75 # Num of additional copies\n",
+        "\n",
+        "wholesale_cost = (discounted_price * 60) + first_copy + (additional_copies * 59)\n",
+        "print(\"Wholesale Cost: $\" + str(wholesale_cost))\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P4baZGRRxfRx"
+      },
+      "source": [
+        "14. If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at\n",
+        "tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "KBtW_i6HxfRy",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "e4d86a12-594f-41c3-ea48-11a6d972eee2"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "07:30 AM\n"
+          ]
+        }
+      ],
+      "source": [
+        "from datetime import datetime, timedelta\n",
+        "\n",
+        "# Leaving house at 6:52AM\n",
+        "# 2 miles at easy pace + 3 miles at tempo\n",
+        "\n",
+        "easy_pace = 8 + (15 / 60) # 8:15 = 8.25 minutes\n",
+        "tempo = 7 + (12 / 60) # 7:12 = 7.2 min\n",
+        "minutes_passed = (2 * easy_pace) + (3 * tempo)\n",
+        "\n",
+        "time_left_house = datetime.strptime(\"6:52 AM\", \"%I:%M %p\") # parses string into datetime object\n",
+        "breakfast_time = time_left_house + timedelta(minutes=minutes_passed)\n",
+        "\n",
+        "print(breakfast_time.strftime(\"%I:%M %p\"))"
+      ]
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.6.5"
+    },
+    "colab": {
+      "provenance": []
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
